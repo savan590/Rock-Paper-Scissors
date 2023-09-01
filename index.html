@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles.css">
+    <title> Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <div class="score-con">
+        <div class="logo">
+            <p>ROCK</p>
+            <p>PAPER</p>
+            <p>SCISSORS</p>
+        </div>
+
+        <div class="cscore">
+            <p>Computer <br>Score</p>
+            <span id="cpoint">0</span>
+        </div>
+
+        <div class="score">
+            <p>Your <br>Score</p>
+            <span id="point">0</span>
+        </div>
+    </div>
+    <div class="game-con">
+        <div class="info">
+            <p class="user">You Picked</p>
+            <p class="machine">PC Picked</p>
+        </div>
+        <div class="option">
+            <img src="./bg-triangle.svg" alt="bg-triangle" class="triangle">
+
+            <div class="sci-con con">
+                <div class="item">
+                    <img src="./17911 1.png" alt="Scissors" class="icons">
+                </div>
+            </div>
+
+            <div class="paper-con con">
+                <div class="item">
+                    <img src="./icons8-hand-64 1.png" alt="paper" class="icons">
+                </div>
+            </div>
+
+            <div class="rock-con con">
+                <div class="item">
+                    <img src="./icons8-fist-67 1.png" alt="rock" class="icons">
+                </div>
+            </div>
+
+            <div class="sci-con computer">
+                <div class="item">
+                    <img src="./17911 1.png" alt="Scissors" class="icons">
+                </div>
+            </div>
+
+            <div class="paper-con computer">
+                <div class="item">
+                    <img src="./icons8-hand-64 1.png" alt="paper" class="icons">
+                </div>
+            </div>
+
+            <div class="rock-con computer">
+                <div class="item">
+                    <img src="./icons8-fist-67 1.png" alt="rock" class="icons">
+                </div>
+            </div>
+        </div>
+        <button id="rule" onclick="myFunction()">Rules</button>
+        <div class="popup">
+            <ul class="popuptext" id="myPopup">
+                <div>
+                    <button class="btn close" id="closed">X</button>
+                </div>
+                <h1 id="u">Game Rules</h1>
+                <li>Rock beats scissors, scissors beat<br>paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll<br>count off “rock, paper, scissors, <br>shoot” or just “rock,
+                    paper,
+                    scissors.”</li>
+                <li>Use rock, paper, scissors to settle<br>
+                    minor decisions or simply play to <br>
+                    pass the time</li>
+                <li>If both players lay down the same <br>hand, each player lays down another<br> hand</li>
+            </ul>
+        </div>
+        <div class="win-modal">
+            <h1 class="winner">You Win <br> Against PC</h1>
+            <button class="play">Play Again</button>
+            <button class="next" onclick="next()">Next</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

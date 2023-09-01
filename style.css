@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #89C15E;
+}
+
+#frame {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    top: 5vh;
+    left: 60vh;
+    background-image: url(Group\ 5.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#myImg {
+    position: absolute;
+    left: 0;
+    top: 22vh;
+    right: 0;
+    bottom: 0;
+    height: 25vh;
+
+    display: block;
+    margin: auto;
+}
+
+#con {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 91px;
+    font-style: normal;
+    margin-top: 10vh;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 9.1px;
+}
+
+#con1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 41px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 4.1px;
+}
+
+.play{
+    border-radius: 9px;
+    background: #FFF;
+    padding: 20px;
+    margin-left: 570px; 
+     color: #6B6B6B;
+    width: 150px;
+    margin-top: 20px;
+    font-family: Roboto;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.5px;
+} 
+
+#rule{
+    
+    position: absolute;
+    bottom: 15px;
+    padding: 15px;
+    width: 120px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(217, 217, 217, 0.00);
+    right: 30px;
+
+}
+
+.close {
+    border-radius: 50%;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .popuptext {
+    display: none;
+    color: #fff;
+    text-align: start;
+    padding: 11px 10px 20px 27px;
+    position: absolute;
+    bottom: 30px;
+    margin-left: 310px;
+    list-style-image: url(./Rectangle\ 5.png);
+    width: 283px;
+    height: 315px;
+    top: -330px;
+    flex-shrink: 0;
+    border-radius: 13px;
+    border: 7px solid #FFF;
+    background: #004429;
+}
+
+li {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 15px;
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#u {
+    padding-left: 21px;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.btn {
+    background-color: red;
+    border: 7px solid #FFF;
+    padding: 6px 13px 6px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 27px;
+    margin: -50px 0px 0px 220px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="frame">
+        <img id="myImg" src="Vector (1).png">
+    </div>
+    <div id="con">
+        <span>HURRAY!!</span>
+    </div>
+    <div id="con1">
+        <span>YOU WON THE GAME</span>
+    </div>
+    <button class="play">Play Again</button>
+    <button id="rule" onclick="myFunction()">Rules</button>
+    <div class="popup">
+        <ul class="popuptext" id="myPopup">
+            <div>
+                <button class="btn close" id="closed">X</button>
+            </div>
+            <h1 id="u">Game Rules</h1>
+            <li>Rock beats scissors, scissors beat<br>paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll<br>count off “rock, paper, scissors, <br>shoot” or just “rock, paper,
+                scissors.”</li>
+            <li>Use rock, paper, scissors to settle<br>
+                minor decisions or simply play to <br>
+                pass the time</li>
+            <li>If both players lay down the same <br>hand, each player lays down another<br> hand</li>
+        </ul>
+    </div>
+    <script>
+        let play = document.querySelector(".play");
+        play.addEventListener("click", () => {
+            window.location = "index.html"
+        });
+        let close = document.getElementById("closed");
+        let popup = document.getElementById("myPopup");
+        close.addEventListener("click", () => {
+            popup.style.display = "none";
+        })
+
+        function myFunction() {
+            if (popup.style.display = "none") {
+                popup.style.display = "grid";
+            }
+        }
+    </script>
+</body>
+
+</html>
